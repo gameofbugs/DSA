@@ -1,0 +1,128 @@
+DSA Basics
+
+Variable=Container use to store the values
+int age=50;
+
+DataType=What type of data is to be stroed in container or the variable
+baisc data types in all prgaramming languagaes are
+int,float,string,char,boolean are the main
+int age=50;
+bool happy=true;
+
+Functions=these are block po code which perform specific task and it reduce the code redudency and we should call function to execute
+types of Functions
+without paramater
+do not pass any variable while calling function
+function()
+{
+//statements
+}
+
+void function()
+{
+Console.writeLine("Hello");
+}
+
+with paramater or by passing paramater
+require to pass the required varibale to the function
+function(<T> t)
+{
+//statements using or without using the passed paramater 
+}where <T> t= referst to DataType and the variable name
+
+void function(string msg)
+{
+Console.writeLine(msg);
+}
+
+Return function
+return a spceific value after calling the function
+<T> function()
+{
+return <T> t;
+}where <T>= type of retyrn type like void(empty),int,float ,boolean etcc...
+
+string function()
+{
+string msg="Hello";
+return msg;
+}
+
+condition statements
+if=true block
+else=false block
+switch=when singel variable has multiple psosibiliies
+
+if(age>=18)
+{
+Console.writeLine("Eleiegable for Vote");
+}
+else
+{
+Console.writeLine("Not Eleiegable for Vote");
+}
+
+looping statements
+for=when itiration is knowed
+foreach=trace through the all emenets in array,list and dictinaries
+while=works until the condition become false
+do while=works once even the ccondition is false
+
+array=use to store the multime value of same DataType,fixed size,start with 0
+int[] array={5,5,6,7};
+
+
+string=used to store sequence of character
+string name="Manoj";
+
+
+Operators= used to perform opeations
++=add
+-=sub
+*=multiply
+/=divide
+%=mdoulus
+= =assign
+>=graten than
+>=graten than or equal to
+<=less than
+<= less than or equal to
+== equal to
+++ incriement
+-- decriment
++=add and assign
+-=sub and assign
+/=divide and assign
+*=multiply and assign
+&&=and when both are true return true
+||=or when any one is true
+!=not reverse if true beocme false or false become true
+
+
+class= blue print of the object
+class demo{
+//codes
+public int age=50;
+}
+
+object =instance of the class or copy of the class
+we have to initilize the obj to acces the class methods and variable
+
+demo d=new demo();
+Console.writeLine(d.age);
+
+
+01_Basics/
+02_LogicBuilding/
+03_Arrays/
+04_Strings/
+05_Searching/
+06_Sorting/
+07_Recursion/
+08_Hashing/
+09_Stack/
+10_Queue/
+11_LinkedList/
+12_Trees/
+13_Graphs/
+14_DP/
