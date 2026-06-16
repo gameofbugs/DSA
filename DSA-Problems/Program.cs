@@ -17,8 +17,8 @@ class Program
             {
                 gcd = i;
             }
-
         }
-        Console.WriteLine(gcd);
+        int lcm = a * b / gcd;
+        Console.WriteLine(lcm);
     }
 }
