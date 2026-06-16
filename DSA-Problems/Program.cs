@@ -4,15 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter a Number");
-        int n = Convert.ToInt32(Console.ReadLine());
-        int rev = 0;
-        while (n > 0)
+        Console.WriteLine("Enter a number");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int len = 0;
+        while (num > 0)
         {
-            int digit = n % 10;
-            rev = rev * 10 + digit;
-            n = n / 10;
+            num = num / 10;
+            len++;
         }
-        Console.WriteLine(rev);
+        Console.WriteLine(len);
     }
 }
