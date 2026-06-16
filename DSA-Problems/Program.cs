@@ -4,37 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter First NUmber:");
+        Console.WriteLine("Enter a NUmber:");
         int a = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter Second NUmber:");
-        int b = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter Third NUmber:");
-        int c = Convert.ToInt32(Console.ReadLine());
-        //Method1
-        if (a >= b)
+        int sum = 0;
+        while (a > 0)
         {
-            if (a >= c)
-            {
-                Console.WriteLine($"The Biggest Num is {a}");
-            }
-            else
-            {
-                Console.WriteLine($"The Biggest Num is {c}");
-            }
+            int digit = a % 10;
+            sum = sum + digit;
+            a = a / 10;
         }
-        else
-        {
-            if (b >= c)
-            {
-                Console.WriteLine($"The Biggest Num is {b}");
-            }
-            else
-            {
-                Console.WriteLine($"The Biggest Num is {c}");
-            }
-        }
-
-        //Method2
-        Console.WriteLine($"The Biggest Num is {(a >= b ? (a >= c ? a : c) : b >= c ? b : c)}"); //not perfect in this and also used by seing my lab prgram
+        Console.WriteLine(sum);
     }
 }
