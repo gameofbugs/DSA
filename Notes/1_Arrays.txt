@@ -1,0 +1,26 @@
+What is an array?
+array is a containar and data structure used to store multiple data of same type in a single variable
+
+Why do we use arrays?
+use to store multiple values in a same variable and it is easy to use
+
+Fixed size
+if once array initilized we can not change the size of the array during runtime
+int[] array=new int[5];
+
+
+Same data type
+if an array intilized using the int datatype all the stroing values should be int
+int[] array={1,2,3} not {i,1,r}
+
+Index starts from 0
+the store of variable start form at 0 index always
+int[] array={1,2,3}
+array[0]=10;
+
+Memory representation
+the array is like the train with the compartment and each compartment store one value
+
+Time complexity of basic operations
+it depends up on the operations
+if only adding the time complexity is very low or print all the elements of array may slow for large size and more time complexity
