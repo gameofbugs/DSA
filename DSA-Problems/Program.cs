@@ -4,24 +4,50 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] array = { -10, -20, -30 };
-        int largest = 0;
-        int secondlargest = 0;
-        for (int i = 1; i < array.Length; i++)
+        int[] array = { 5, 4, 3, 2, 1 };
+        int[] array2 = { 1, 5, 3, 4, 6 };
+
+        bool CheckSorted(int[] arr)
         {
-            if (array[i] >= array[largest])
+            int k = 0;
+            for (int i = 1; i < arr.Length; i++)
             {
-                largest = i;
+                //Console.WriteLine($"{i},{k}");
+                if (arr[i] >= arr[k])
+                {
+                    k = i;
+                }
+                else
+                {
+                    break;
+                }
+                //Console.WriteLine($"{i},{k}");
+            }
+            if (k == arr.Length - 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
-        for (int i = 0; i < array.Length; i++)
+        if (CheckSorted(array))
         {
-            if (array[largest] > array[i] && array[i] > array[secondlargest])
-            {
-                secondlargest = i;
-            }
+            Console.WriteLine($"Array array Is sorted");
         }
-        Console.WriteLine(array[largest]);
-        Console.WriteLine(array[secondlargest]);
+        else
+        {
+            Console.WriteLine($"Array array Is not sorted");
+        }
+
+        if (CheckSorted(array2))
+        {
+            Console.WriteLine($"Array array2 Is sorted");
+        }
+        else
+        {
+            Console.WriteLine($"Array array Is not sorted");
+        }
     }
 }
