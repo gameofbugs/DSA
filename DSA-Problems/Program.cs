@@ -4,30 +4,26 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[] arr1 = { 1, 2, 3, 0, 0, 4, 6, 2, 0 };
-        int lastelement = arr1.Length;
-        Console.WriteLine("before Moving");
+        int[] arr1 = { -1, -1, 5, 5 };
+        //int[] duplicateArray = new int[arr1.Length];
+        //int index = 0;
+        int diplicateElement = -1;
         for (int i = 0; i < arr1.Length; i++)
         {
-            Console.WriteLine(arr1[i]);
-        }
-        int index = 0;
-        for (int i = 0; i < arr1.Length; i++)
-        {
-            if (arr1[i] > 0)
+            for (int j = i + 1; j < arr1.Length; j++)
             {
-                arr1[index] = arr1[i];
-                index++;
+                if (arr1[i] == arr1[j])
+                {
+
+                    if (arr1[i] != diplicateElement)
+                    {
+                        diplicateElement = arr1[i];
+                        Console.WriteLine(arr1[i]);
+                        //index++;
+                        break;
+                    }
+                }
             }
-        }
-        for (int i = index; i < arr1.Length; i++)
-        {
-            arr1[i] = 0;
-        }
-        Console.WriteLine("after Moving");
-        for (int i = 0; i < arr1.Length; i++)
-        {
-            Console.WriteLine(arr1[i]);
         }
     }
 }
