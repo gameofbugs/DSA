@@ -1,0 +1,47 @@
+namespace DSA_Problems;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] array = { 1, 2, 3, 4, 5, 6, 7 };
+        int[] array2 = { 1, 4, 28, 3, 5, 2, 6 };
+
+        bool CheckSorted(int[] arr)
+        {
+            int k = 0;
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i] >= arr[k])
+                {
+                    k = i;
+                }
+            }
+            if (k == arr.Length - 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        if (CheckSorted(array))
+        {
+            Console.WriteLine($"Array array Is sorted");
+        }
+        else
+        {
+            Console.WriteLine($"Array array Is not sorted");
+        }
+
+        if (CheckSorted(array2))
+        {
+            Console.WriteLine($"Array array2 Is sorted");
+        }
+        else
+        {
+            Console.WriteLine($"Array array Is not sorted");
+        }
+    }
+}
